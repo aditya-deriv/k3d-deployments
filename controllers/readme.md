@@ -13,6 +13,7 @@
 ## Example of modifying your deployment after it's already up and runnning:
 1) Use a text editor to update your `nginx-deployment.yaml` file and change the spec.replicas value from `3` to `2`. (kubectl set command can also be used to perform this action although it is less recommended for enterprise use cases)
 2) Apply the above deployment file by running `kubectl apply path/to/nginx-deployment.yaml` and check status of the rollout to all replicas with kubectl rollout status `kubectl rollout status deployment/nginx-deployment`
+   -    A rollout can be paused midway (especially for larger depployments) manusally by `kubectl rollout pause deployment/nginx-deployment`
 
 ## Rolling release strategy:
 
