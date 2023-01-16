@@ -10,7 +10,7 @@
    - Run `kubectl get pods --show-labels` to view the auto assigned labels for each pod.
 
 ## Rolling release strategy:
-By default, Rolling deployment is the default deployment strategy in kubernetes. It replaces the existing version of the pods with the new version slowly one by one, without cluster downtime.
+By default, Rolling deployment is the deployment strategy used in kubernetes. It replaces the existing version of the pods with the new version slowly one by one, without cluster downtime.
 
 ## Example of rolling out changes to your deployment after it's already up and runnning:
 1) Use a text editor to update your `nginx-deployment.yaml` file and change the spec.replicas value from `3` to `2`. (kubectl set command can also be used to perform this action although it is less recommended for enterprise use cases)
