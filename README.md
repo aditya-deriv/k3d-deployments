@@ -26,3 +26,10 @@ It's the process of failing back on an older version of the deployment to recove
 
 ## What is a replicaset?
 A replicaset is a process that runs multiple instances of a pod and keeps the specified number of Pods constant as defined in the yaml file.
+
+## Labs and their contents:
+- lab 1
+	- Main focus is on Deployments, Rolling updates and rollback examples.
+- lab 2 
+	- Main focus is on Sidecars, Init pods, Config Maps and secrets. 
+
