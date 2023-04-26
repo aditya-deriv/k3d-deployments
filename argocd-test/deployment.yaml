@@ -28,7 +28,7 @@ metadata:
   name: redis
 spec:
   destination:
-    namespace: redis_default
+    namespace: argo-demo
     server: https://kubernetes.default.svc
   project: redis_default
   source:
