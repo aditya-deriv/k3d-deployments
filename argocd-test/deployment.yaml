@@ -34,7 +34,7 @@ spec:
   source:
     path: redis
 # this should be the git URL to the redis deployment file you intend to deploy into your argo CD cluster. 
-    repoURL: https://github.com/example/redis.git
+    repoURL: https://github.com/aditya-deriv/k3d-deployments/redis/
     targetRevision: HEAD
   syncPolicy:
     automated: {}
