@@ -21,3 +21,22 @@ spec:
         ports:
           - name: http
             containerPort: 80
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: redis
+spec:
+  destination:
+    namespace: default
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: redis
+# this should be the git URL to the redis deployment file you intend to deploy into your argo CD cluster. 
+    repoURL: https://github.com/example/redis.git
+    targetRevision: HEAD
+  syncPolicy:
+    automated: {}
+  # You can add more customization here, such as sync and health checks.
+
