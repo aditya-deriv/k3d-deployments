@@ -28,9 +28,9 @@ metadata:
   name: redis
 spec:
   destination:
-    namespace: default
+    namespace: redis_default
     server: https://kubernetes.default.svc
-  project: default
+  project: redis_default
   source:
     path: redis
 # this should be the git URL to the redis deployment file you intend to deploy into your argo CD cluster. 
